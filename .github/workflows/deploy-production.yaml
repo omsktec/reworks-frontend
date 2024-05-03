@@ -1,4 +1,4 @@
-name: Build and deploy to server using rsync
+name: Build and deploy to server using rsync (production)
 
 on:
   push:
