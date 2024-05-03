@@ -42,6 +42,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            rm -rf ${{ secrets.PROJECT_PATH }}/*
+            rm -rf ${{ secrets.PROJECT_PATH_STAGING }}/*
       - name: Deploy to server
-        run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.PROJECT_PATH }}
+        run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.PROJECT_PATH_STAGING }}
