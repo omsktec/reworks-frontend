@@ -1,0 +1,28 @@
+@import "reset.scss";
+
+body,
+.Header {
+  user-select: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  img {
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+
+    color: red;
+    font-weight: 900;
+  }
+}
